@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #191f28;
+  --muted: #4e5968;
+  /* 메인 컬러: 버건디 (흰 배경 + 버건디 포인트 테마) */
+  --burgundy: #722f37;
+  --burgundy-hover: #5c252b;
+  --accent: var(--burgundy);
+  --accent-hover: var(--burgundy-hover);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-burgundy: var(--burgundy);
+  --color-burgundy-hover: var(--burgundy-hover);
+  --font-sans: var(--font-noto-sans-kr), system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-noto-sans-kr), system-ui, sans-serif;
+}
