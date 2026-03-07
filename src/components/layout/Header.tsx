@@ -1,11 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-black/[0.06]">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href="/" className="text-xl font-bold tracking-tight text-[#191f28]">
-          클라이밍
+        <Link href="/" className="flex items-center gap-2">
+          <Image src="/logo.svg" alt="" width={32} height={32} className="h-8 w-8" />
+          <span className="text-xl font-bold tracking-tight text-[#191f28]">ClimbMate</span>
         </Link>
         <nav className="flex items-center gap-6">
           <Link
@@ -28,7 +30,7 @@ export default function Header() {
           </Link>
           <Link
             href="/login"
-            className="rounded-full bg-[#191f28] px-5 py-2.5 text-[15px] font-medium text-white transition-colors hover:bg-[#333d4b]"
+            className="rounded-full bg-burgundy px-5 py-2.5 text-[15px] font-medium text-white transition-colors hover:bg-burgundy-hover"
           >
             로그인
           </Link>
