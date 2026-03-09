@@ -118,7 +118,7 @@ export const MOCK_USERS: AdminUser[] = [
   },
   {
     id: "u4",
-    email: "admin@climbmate.com",
+    email: "admin@climbfriends.com",
     nickname: "관리자",
     provider: "google",
     role: "ADMIN",
@@ -148,8 +148,8 @@ export const MOCK_USERS: AdminUser[] = [
 export const MOCK_NOTICES: Notice[] = [
   {
     id: "n1",
-    title: "ClimbMate 이용 안내",
-    content: "클라이밍 친목 커뮤니티 ClimbMate에 오신 것을 환영합니다. 건전한 소통 부탁드립니다.",
+    title: "ClimbFriends 이용 안내",
+    content: "클라이밍 친목 커뮤니티 ClimbFriends에 오신 것을 환영합니다. 건전한 소통 부탁드립니다.",
     isPinned: true,
     createdAt: "2025-03-01T09:00:00",
     updatedAt: "2025-03-01T09:00:00",

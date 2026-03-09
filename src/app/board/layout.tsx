@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "자유게시판 | ClimbMate",
-  description: "ClimbMate 자유게시판에서 정보를 나누고 소통해보세요.",
+  title: "자유게시판 | ClimbFriends",
+  description: "ClimbFriends 자유게시판에서 정보를 나누고 소통해보세요.",
 };
 
 export default function BoardLayout({

@@ -10,9 +10,9 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "ClimbMate | 클라이머를 위한 친목 커뮤니티",
+  title: "ClimbFriends | 클라이머를 위한 친목 커뮤니티",
   description:
-    "함께 오르고, 정보를 나누는 클라이밍 친목 커뮤니티 ClimbMate. 게시판, 실시간 채팅, 동행 모집까지.",
+    "함께 오르고, 정보를 나누는 클라이밍 친목 커뮤니티 ClimbFriends. 게시판, 실시간 채팅, 동행 모집까지.",
 };
 
 export default function RootLayout({

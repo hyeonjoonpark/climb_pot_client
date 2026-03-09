@@ -18,21 +18,20 @@ import type {
 
 type Tab = "reports" | "comments" | "users" | "activity" | "notices";
 
+/** 서버/클라이언트 동일 출력으로 Hydration 오류 방지 */
 function formatDateTime(iso: string) {
-  return new Date(iso).toLocaleString("ko-KR", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+  const d = new Date(iso);
+  const y = d.getFullYear();
+  const m = d.getMonth() + 1;
+  const day = d.getDate();
+  const h = d.getHours();
+  const min = d.getMinutes();
+  return `${y}. ${m}. ${day}. ${String(h).padStart(2, "0")}:${String(min).padStart(2, "0")}`;
 }
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("ko-KR", {
-    month: "short",
-    day: "numeric",
-  });
+  const d = new Date(iso);
+  return `${d.getMonth() + 1}. ${d.getDate()}`;
 }
 
 const STATUS_LABEL = {

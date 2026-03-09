@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="border-t border-[#e5e8eb] py-10 px-6">
       <div className="mx-auto max-w-5xl space-y-4">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
-          <span className="text-sm font-medium text-[#191f28]">ClimbMate</span>
+          <span className="text-sm font-medium text-[#191f28]">ClimbFriends</span>
           <div className="flex flex-col gap-1 text-sm text-[#4e5968]">
-            <span>© {currentYear} ClimbMate. All rights reserved.</span>
+            <span>© {currentYear} ClimbFriends. All rights reserved.</span>
             <div className="flex flex-wrap gap-x-4 gap-y-1">
               <a
                 href="mailto:pjjoon1379@gmail.com"

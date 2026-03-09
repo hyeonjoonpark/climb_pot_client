@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "관리자 | ClimbFriends",
-  description: "ClimbFriends 관리자 대시보드",
+  title: "일정 | ClimbFriends",
+  description: "ClimbFriends 일정을 확인하고 참여해보세요.",
 };
 
-export default function AdminLayout({
+export default function ScheduleLayout({
   children,
 }: {
   children: React.ReactNode;

@@ -7,7 +7,7 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/logo.svg" alt="" width={32} height={32} className="h-8 w-8" />
-          <span className="text-xl font-bold tracking-tight text-[#191f28]">ClimbMate</span>
+          <span className="text-xl font-bold tracking-tight text-[#191f28]">ClimbFriends</span>
         </Link>
         <nav className="flex items-center gap-6">
           <Link
@@ -17,10 +17,10 @@ export default function Header() {
             게시판
           </Link>
           <Link
-            href="/crew"
+            href="/schedule"
             className="text-[15px] font-medium text-[#4e5968] hover:text-[#191f28] transition-colors"
           >
-            크루
+            일정
           </Link>
           <Link
             href="/message"

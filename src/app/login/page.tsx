@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "로그인 | ClimbMate",
-  description: "ClimbMate에 로그인하여 게시판, 크루, 메세지를 이용하세요.",
+  title: "로그인 | ClimbFriends",
+  description: "ClimbFriends에 로그인하여 게시판, 크루, 메세지를 이용하세요.",
 };
 
 export default function LoginPage() {
@@ -19,7 +19,7 @@ export default function LoginPage() {
             className="h-10 w-10"
           />
           <span className="text-2xl font-bold tracking-tight text-[#191f28]">
-            ClimbMate
+            ClimbFriends
           </span>
         </Link>
 

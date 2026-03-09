@@ -24,3 +24,45 @@ body {
   color: var(--foreground);
   font-family: var(--font-noto-sans-kr), system-ui, sans-serif;
 }
+
+/* react-calendar 테마 오버라이드 (일정 페이지) */
+.schedule-calendar-wrapper .react-calendar {
+  width: 100%;
+  border: 1px solid #e5e8eb;
+  font-family: inherit;
+}
+.schedule-calendar-wrapper .react-calendar__navigation button:enabled:hover,
+.schedule-calendar-wrapper .react-calendar__navigation button:enabled:focus {
+  background-color: #f9fafb;
+  color: var(--burgundy);
+}
+.schedule-calendar-wrapper .react-calendar__tile {
+  position: relative;
+  padding: 0.6em 0.5em;
+}
+.schedule-calendar-wrapper .react-calendar__tile:enabled:hover {
+  background-color: #f9fafb;
+}
+.schedule-calendar-wrapper .react-calendar__tile--now {
+  background: #f2f4f6;
+}
+.schedule-calendar-wrapper .react-calendar__month-view__days__day--neighboringMonth {
+  color: #c4c8cc;
+}
+.schedule-calendar-wrapper .react-calendar__month-view__weekdays__weekday {
+  color: #8b95a1;
+  font-weight: 600;
+}
+.schedule-calendar-wrapper .react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+.schedule-calendar-wrapper .react-calendar__tile--active {
+  background: var(--burgundy) !important;
+  color: white !important;
+}
+.schedule-calendar-wrapper .react-calendar__tile--active:enabled:hover {
+  background: var(--burgundy-hover) !important;
+}
+.schedule-calendar-wrapper .react-calendar__tile.has-event {
+  font-weight: 500;
+}

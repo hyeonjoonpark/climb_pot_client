@@ -8,14 +8,14 @@ export default function Home() {
       <section className="pt-32 pb-24 px-6 md:pt-40 md:pb-32">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-bold leading-[1.2] tracking-tight text-[#191f28] md:text-5xl lg:text-6xl">
-            ClimbMate와 함께
+            ClimbFriends와 함께
             <br />
             <span className="text-burgundy">클라이머 친목 커뮤니티</span>
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-[#4e5968] md:text-xl">
             함께 오르고, 정보를 나누고, 동행을 구해보세요.
             <br className="hidden sm:block" />
-            이제껏 경험 못 했던 편한 클라이밍 모임, ClimbMate에서 시작해요.
+            이제껏 경험 못 했던 편한 클라이밍 모임, ClimbFriends에서 시작해요.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
