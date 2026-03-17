@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useRef, useEffect } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import type { Conversation, Message } from "@/types/message";
 import {
   MOCK_CONVERSATIONS,
@@ -42,6 +43,8 @@ function formatListTime(iso: string): string {
 }
 
 export default function MessagePage() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
   const [conversations, setConversations] = useState<Conversation[]>(() =>
     [...MOCK_CONVERSATIONS].sort((a, b) => (b.lastMessageAt > a.lastMessageAt ? 1 : -1))
   );
@@ -90,6 +93,14 @@ export default function MessagePage() {
     }
     setShowNewChat(false);
   };
+
+  useEffect(() => {
+    const openUserId = searchParams.get("open");
+    if (openUserId && openUserId !== CURRENT_USER_ID) {
+      openOrCreateConversation(openUserId);
+      router.replace("/message", { scroll: false });
+    }
+  }, [searchParams]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });

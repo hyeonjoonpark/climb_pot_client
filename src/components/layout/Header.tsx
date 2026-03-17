@@ -29,6 +29,12 @@ export default function Header() {
             메세지
           </Link>
           <Link
+            href="/matching"
+            className="text-[15px] font-medium text-[#4e5968] hover:text-[#191f28] transition-colors"
+          >
+            소개팅
+          </Link>
+          <Link
             href="/login"
             className="rounded-full bg-burgundy px-5 py-2.5 text-[15px] font-medium text-white transition-colors hover:bg-burgundy-hover"
           >
